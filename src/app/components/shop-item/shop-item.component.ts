@@ -50,9 +50,9 @@ for(let i=0;i<this.shopeditemList.length;i++){
 
 removeData(id:any){
   let index= _.findIndex(this.shopeditemList,{'id':id});
-  console.log("index",index);
+  
   let value=this.shopeditemList[index].total;
-  console.log("index",value);
+
   this.total=this.total - parseInt(value);
   console.log("index",this.total);
   this.shopeditemList.splice(index,1);
