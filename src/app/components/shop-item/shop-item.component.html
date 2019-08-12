@@ -1,0 +1,31 @@
+<div class="shop-center">
+  <div class="form-width">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">{{count}}</span>
+      </div>
+      <input type="text" class="form-control" [(ngModel)]="name" name="name">
+      <div class="input-group-append ">
+        <button type="button" name="button" (click)="addItem()">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-list-item *ngFor="let item of shopItems; let i=index" [items]="item" [count]='i'
+(addItem)="addShopItem($event)"
+></app-list-item>
+<div class="mt-5">
+<app-shoped-items   *ngFor="let item of shopeditemList" [shopedItem]='item'
+(add)="addSum($event)"
+(removeItem)="removeData($event)"
+>
+</app-shoped-items>
+</div>
+<div class="shop-center">
+  <div class="form-width">
+  <hr>
+ <p>Total:<span class="total-price">{{total}}</span></p>
+</div>
+</div>

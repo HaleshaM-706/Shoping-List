@@ -1,0 +1,22 @@
+.shop-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.form-width{
+width: 300px;
+}
+.list-group-item{
+width:222px;
+}
+.list-item{
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.total-price{
+  float: right;
+}

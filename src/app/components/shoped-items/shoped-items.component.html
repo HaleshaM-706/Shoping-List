@@ -1,0 +1,20 @@
+<div class="shop-center">
+  <div class="form-width">
+<div class="list-item" >
+  <div class="form-width">
+    <ul class="list-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <button type="button" name="button" (click)="removeItemList(shopedItem.id)">-</button>
+        </div>
+        <li class="list-group-item">{{shopedItem.item}}</li>
+       <div class="input-group-append">
+          <input type="text" class="form-control"  #name
+      (keyup.enter)="addTotal(name.value,shopedItem.id)" name="name">
+        </div>
+      </div>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
